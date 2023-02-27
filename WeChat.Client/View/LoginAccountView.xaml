@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeChat.Client.View.LoginAccountView"
+             xmlns:viewmodel="clr-namespace:WeChat.Client.ViewModel"
+             x:DataType="viewmodel:LoginAccountViewModel">
+
+    <!-- Grid Geral -->
+    <Grid>
+        
+        <!-- Caixa de informações de Login -->
+        <Grid RowDefinitions="Auto, Auto"
+              HeightRequest="100"
+              WidthRequest="300"
+              HorizontalOptions="Center">
+
+            <!-- Caixa de entradas de Texto (Estilização) -->
+            <Grid RowDefinitions="Auto, Auto"
+                  Padding="10" 
+                  Grid.Row="0">
+                <Entry x:Name="txtLogin" Grid.Row="0" Margin="10" Placeholder="Email" Text="{Binding Username}"/>
+                <Entry x:Name="txtPassword" Grid.Row="1" Margin="10" Placeholder="Password" Text="{Binding Password}" IsPassword="True"/>
+            </Grid>
+
+            <!-- Caixa de Botões -->
+            <Grid ColumnDefinitions=".50*, .50*"
+                  Padding="15" 
+                  Grid.Row="1">
+                <Button Grid.Column="0" Padding="5" Margin="10" Text="Login" Command="{Binding LogInAccountCommand}"/>
+                <Button Grid.Column="1" Padding="5" Margin="10" Text="Register" Command="{Binding GoToRegisterPageCommand}"/>
+            </Grid>
+            
+        </Grid>
+
+
+    </Grid>
+</ContentPage>

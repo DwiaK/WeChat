@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeChat.Client.View.WeChatView"
+             xmlns:viewmodel="clr-namespace:WeChat.Client.ViewModel"
+             x:DataType="viewmodel:WeChatViewModel">
+
+    <!-- Grid Geral -->
+    <Grid>
+        <!-- Definições -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".20*"/>
+            <ColumnDefinition Width=".75*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Menu esquerdo -->
+        <Grid BackgroundColor="#1a1a1a"
+              Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".75*"/>
+                <RowDefinition Height=".10*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Contatos e Grupos -->
+            <Grid Grid.Row="0"
+                  BackgroundColor="#1a1a1a">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height=".90*"/>
+                </Grid.RowDefinitions>
+                
+                <!-- Título -->
+                <Label Text="WeChat" 
+                       TextColor="#ffffff"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Margin="10, 10, 10, 10"/>
+
+                <!-- Adicionar Contato -->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".90*"/>
+                        <ColumnDefinition Width=".10*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry Grid.Column="0"
+                           Margin="20, 10, 40, 10"/>
+
+                    <Button Grid.Column="1"
+                            Text="+"
+                            Margin="-40, 10, 10, 10"
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            CornerRadius="5"/>
+                </Grid>
+
+                <CollectionView BackgroundColor="#1a1a1a"
+                                Grid.Row="2">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>AAAAA</x:String>
+                            <x:String>Test2</x:String>
+                            <x:String>Test3</x:String>
+                            <x:String>Test</x:String>
+                            <x:String>Test</x:String>
+                            <x:String>Test</x:String>
+                            <x:String>Test</x:String>
+                            <x:String>Test</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    
+                    <!-- Template da Coleção -->
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="5" Margin="15, 0, 15, 0">
+                                <Border BackgroundColor="#1d1d1d">
+                                    <Border.Shadow>
+                                        <Shadow Brush="Black"
+                                                Offset="5, 5"
+                                                Opacity="0.1"/>
+                                    </Border.Shadow>
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5, 5, 5, 5"/>
+                                    </Border.StrokeShape>
+                                    <Grid ColumnDefinitions="Auto, *">
+                                        <!-- Foto do usuário -->
+                                        <Ellipse Grid.Column="0"
+                                         Fill="White"
+                                         WidthRequest="50"
+                                         HeightRequest="50"
+                                         HorizontalOptions="Center"
+                                         Margin="10, 15, 10, 10"/>
+
+                                        <!-- Nome do usuário -->
+                                        <Grid Margin="10, 30, 10, 10" Grid.Column="1">
+                                            <Label Text="{Binding .}"
+                                           FontSize="14"/>
+                                        </Grid>
+                                    </Grid>
+                                </Border>
+                                <Button/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+            </Grid>
+
+            <!-- Usuário -->
+            <Grid Grid.Column="0"
+                  Grid.Row="1"
+                  BackgroundColor="#1a1a1a">
+                
+                <Grid.Shadow>
+                    <Shadow Brush="Black"
+                        Offset="0,0"
+                        Opacity="0.5"/>
+                </Grid.Shadow>
+
+                <!-- Grid colunas foto do usuário e nome/status -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".25*"/>
+                        <ColumnDefinition Width=".75*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Foto do usuário -->
+                    <Ellipse Grid.Column="0"
+                             Fill="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             HorizontalOptions="Center"
+                             Margin="10, 15, 10, 10"/>
+
+                    <!-- Nome do usuário -->
+                    <Label Text="{Binding IndexUser}" 
+                           Grid.Column="1"
+                           TextColor="#ffffff"
+                           FontSize="16"
+                           HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 10, 10, 20"/>
+
+                    <!-- Status do usuário -->
+                    <Label Text="Status"
+                           Grid.Column="1"
+                           TextColor="#b1b1b1"
+                           FontSize="12"
+                           HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 20, 10, 0"/>
+
+                </Grid>
+
+                <Button/>
+
+            </Grid>
+        </Grid>
+
+        <!-- Principal Direito -->
+        <Grid Grid.Column="1" BackgroundColor="#101010">
+
+        </Grid>
+
+    </Grid>
+    
+</ContentPage>

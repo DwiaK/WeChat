@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Client", "WeChat.Client\WeChat.Client.csproj", "{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Server", "WeChat.Server\WeChat.Server.csproj", "{E75F00B2-FB72-44EC-9E1F-9A005C80A506}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Network", "WeChat.Network\WeChat.Network.csproj", "{B00C7EC2-7BFC-4671-9E35-4DD52762EBAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Database", "WeChat.Database\WeChat.Database.csproj", "{D91A5210-6CD6-4A05-8AA4-4B6FE88CFF16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Firebase", "WeChat.Firebase\WeChat.Firebase.csproj", "{79650366-490B-4FB7-A2F3-2BC9983EC3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChat.Test", "WeChat.Test\WeChat.Test.csproj", "{95A792FC-9A41-4EFD-B8A9-31C993FFB934}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7BCEE5-DBB9-48C4-8E08-9B4CC9B5F240}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E75F00B2-FB72-44EC-9E1F-9A005C80A506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75F00B2-FB72-44EC-9E1F-9A005C80A506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75F00B2-FB72-44EC-9E1F-9A005C80A506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75F00B2-FB72-44EC-9E1F-9A005C80A506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00C7EC2-7BFC-4671-9E35-4DD52762EBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00C7EC2-7BFC-4671-9E35-4DD52762EBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00C7EC2-7BFC-4671-9E35-4DD52762EBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00C7EC2-7BFC-4671-9E35-4DD52762EBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91A5210-6CD6-4A05-8AA4-4B6FE88CFF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91A5210-6CD6-4A05-8AA4-4B6FE88CFF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91A5210-6CD6-4A05-8AA4-4B6FE88CFF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91A5210-6CD6-4A05-8AA4-4B6FE88CFF16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79650366-490B-4FB7-A2F3-2BC9983EC3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79650366-490B-4FB7-A2F3-2BC9983EC3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79650366-490B-4FB7-A2F3-2BC9983EC3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79650366-490B-4FB7-A2F3-2BC9983EC3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A792FC-9A41-4EFD-B8A9-31C993FFB934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A792FC-9A41-4EFD-B8A9-31C993FFB934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A792FC-9A41-4EFD-B8A9-31C993FFB934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A792FC-9A41-4EFD-B8A9-31C993FFB934}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

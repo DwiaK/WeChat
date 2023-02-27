@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeChat.Client.View.RegisterAccountView"
+             xmlns:viewmodel="clr-namespace:WeChat.Client.ViewModel"
+             x:DataType="viewmodel:RegisterAccountViewModel">
+
+    <!-- Grid Geral -->
+    <Grid>
+
+        <!-- Caixa de informações de Login -->
+        <Grid RowDefinitions="Auto, Auto"
+              HeightRequest="150"
+              WidthRequest="300"
+              HorizontalOptions="Center">
+
+            <!-- Caixa de entradas de Texto (Estilização) -->
+            <Grid RowDefinitions="Auto, Auto, Auto"
+                  Padding="10" 
+                  Grid.Row="0">
+                <Entry x:Name="txtEmail" Grid.Row="0" Margin="10" Placeholder="Email" Text="{Binding Email}"/>
+                <Entry x:Name="txtPassword" Grid.Row="1" Margin="10" Placeholder="Password" Text="{Binding Password}" IsPassword="True"/>
+                <Entry x:Name="txtUsername" Grid.Row="2" Margin="10" Placeholder="Username" Text="{Binding Username}"/>
+            </Grid>
+
+            <!-- Caixa de Botões -->
+            <Grid ColumnDefinitions=".50*, .50*"
+                  Padding="15" 
+                  Grid.Row="1">
+                <Button Grid.Column="0" Padding="5" Margin="10" Text="Confirm" Command="{Binding RegisterAccountCommand}"/>
+                <Button Grid.Column="1" Padding="5" Margin="10" Text="Cancel" Command="{Binding GoBackCommand}"/>
+            </Grid>
+
+        </Grid>
+
+
+    </Grid>
+
+</ContentPage>
