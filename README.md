@@ -1,5 +1,7 @@
 # .NET MAUI Chat Application
 
+Work in progress...
+
 ## - What is this project ?
 
 Chat application written in C# .NET(MAUI)
